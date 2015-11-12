@@ -98,6 +98,7 @@ public class MenuPartiManager : MonoBehaviour
     public void CriarSala()
     {
         Application.LoadLevel("MainScene");
+
     }
 
 }

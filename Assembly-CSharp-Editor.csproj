@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{3289B61E-C8BA-C6B4-855A-22E12F9F503B}</ProjectGuid>
+	<ProjectGuid>{6750917D-41F1-D255-E0B3-78795240ABDC}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -84,25 +84,25 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="I18N">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/I18N.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.dll</HintPath>
  </Reference>
  <Reference Include="I18N.West">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/I18N.West.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.West.dll</HintPath>
  </Reference>
  <Reference Include="MySql.Data">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -143,9 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{7CC1AF29-3862-1E73-B88B-E54631A142F4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{6ACE7188-DE0A-677C-27D1-FF30F18EC737}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{3DF5CFD5-15ED-8740-64DE-B7B2572DD2D1}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{437A5D4A-15A5-3FAD-5ED5-80B75C6D4D94}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

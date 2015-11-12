@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{3DF5CFD5-15ED-8740-64DE-B7B2572DD2D1}</ProjectGuid>
+	<ProjectGuid>{437A5D4A-15A5-3FAD-5ED5-80B75C6D4D94}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -51,6 +51,7 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Character\HeadBob.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\Health.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\MouseLook.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\MouseLook2.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Objects\Bullet\Bullet.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Objects\Bullet\Spawn_Bullet.cs" />
@@ -80,9 +81,11 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuConfigManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuLoginManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuPartiManager.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\NetworkManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\PlayerScoreList.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScoreboardManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\SpawnPlayer.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\TimerGame.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
@@ -209,22 +212,22 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="I18N">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/I18N.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.dll</HintPath>
  </Reference>
  <Reference Include="I18N.West">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/I18N.West.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.West.dll</HintPath>
  </Reference>
  <Reference Include="MySql.Data">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -232,7 +235,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{7CC1AF29-3862-1E73-B88B-E54631A142F4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{6ACE7188-DE0A-677C-27D1-FF30F18EC737}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
