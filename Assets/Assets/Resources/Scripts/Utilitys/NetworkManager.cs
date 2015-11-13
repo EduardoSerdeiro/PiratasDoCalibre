@@ -3,60 +3,53 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour {
 
+    TimerGame timeGame;
+
     public GameObject[] SpawnsPlayers;
 
 	void Start () {
-
+        timeGame = new TimerGame();
         //SpawnsPlayers = GameObject.FindObjectsOfType<SpawnPlayer>();
         SpawnsPlayers = GameObject.FindGameObjectsWithTag("Spawn");
 
+        //PhotonNetwork.logLevel = PhotonLogLevel.Full;
         Connect();
-        PhotonNetwork.offlineMode = true;
-        OnJoinedLobby();
-        SpawnPlayers();
-
-      //  CriarSala();
-
-       
-
-	}
+        
+        	}
 	
 	void Update () {
-
-       // Debug.Log(PhotonNetwork.connected);
+       
 
 	}
 
     public void Connect()
     {
-      
         PhotonNetwork.ConnectUsingSettings("PdC v0.4");
-       
     }
-
-    void OnJoinedLobby()
+  
+    public void OnConnectedToMaster()
     {
-        Debug.Log("OnJoinedLobby");
-        PhotonNetwork.JoinRandomRoom();
+        Debug.Log("OnConnectedToMaster");
+        PhotonNetwork.CreateRoom("Sala1");
+        //PhotonNetwork.JoinRandomRoom();
     }
-
+   
     void OnPhotonRandomJoinFailed()
     {
         Debug.Log("OnPhotonRandomJoinFailed");
-        PhotonNetwork.CreateRoom(null);
-    }
-  
-
-    void EntrarSalaRandom()
-    {
+        //PhotonNetwork.CreateRoom("Sala2");
         PhotonNetwork.JoinRandomRoom();
+       // PhotonNetwork.JoinRoom("Sala1");
     }
 
-    void CriarSala()
+    void OnJoinedRoom()
     {
-        PhotonNetwork.CreateRoom("Sala1");
+        Debug.Log("OnJoinedRoom");
+        //PhotonNetwork.JoinRoom("Sala1");
+        //Debug.Log(PhotonNetwork.room.name);
+        SpawnPlayers();
+        timeGame.SetStartTime(true);
     }
-   
 
     private void SpawnPlayers()
     {
@@ -69,6 +62,10 @@ public class NetworkManager : MonoBehaviour {
        ((MonoBehaviour)MyPlayer.GetComponent("Agachar")).enabled = true;
         MyPlayer.transform.GetChild(0).GetComponent<Camera>().enabled = true;
     }
-   
 
+    void OnGUI()
+    {
+        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+
+    }
 }

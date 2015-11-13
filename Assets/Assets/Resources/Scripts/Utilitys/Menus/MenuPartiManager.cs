@@ -83,7 +83,7 @@ public class MenuPartiManager : MonoBehaviour
         {
             TxtMode.text = "4x4 Jogadores";
             playerTeam = 4;
-        contMode++;
+           contMode++;
        
         }
         else if (contMode == 1)
@@ -98,6 +98,8 @@ public class MenuPartiManager : MonoBehaviour
     public void CriarSala()
     {
         Application.LoadLevel("MainScene");
+       //PhotonNetwork.LoadLevel("MainScene");
+
 
     }
 

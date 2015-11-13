@@ -87,6 +87,7 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\SpawnPlayer.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\TimerGame.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Vazio.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\DemoBoxesGui.cs" />
