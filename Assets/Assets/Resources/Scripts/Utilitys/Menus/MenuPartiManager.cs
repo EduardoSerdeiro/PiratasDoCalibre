@@ -33,6 +33,7 @@ public class MenuPartiManager : MonoBehaviour
         contMode = 1;
         TxtMode.text = "4x4 Jogadores";
         playerTeam = 4;
+        PlayerPrefs.SetInt("playerTeam", playerTeam);
 	}
 
     void Update()
@@ -92,6 +93,9 @@ public class MenuPartiManager : MonoBehaviour
             playerTeam = 8;
             contMode--;
         }
+
+        PlayerPrefs.SetInt("playerTeam", playerTeam);
+
     }
 
 

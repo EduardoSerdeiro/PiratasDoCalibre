@@ -5,13 +5,24 @@ public class NetworkManager : MonoBehaviour {
 
     TimerGame timeGame;
 
+    private int playersMax;
+
     public GameObject[] SpawnsPlayers;
+
+
 
 	void Start () {
         timeGame = new TimerGame();
         //SpawnsPlayers = GameObject.FindObjectsOfType<SpawnPlayer>();
         SpawnsPlayers = GameObject.FindGameObjectsWithTag("Spawn");
 
+        if (PlayerPrefs.HasKey("playerTeam") == true)
+        {
+            playersMax = PlayerPrefs.GetInt("playerTeam");
+        }
+
+        Debug.Log("playMax : " +playersMax);
+        PhotonNetwork.autoJoinLobby = true;
         //PhotonNetwork.logLevel = PhotonLogLevel.Full;
         Connect();
         
@@ -35,13 +46,12 @@ public class NetworkManager : MonoBehaviour {
 
     public void OnJoinedLobby()
     {
-       
         PhotonNetwork.JoinRandomRoom();
     }
     void OnPhotonRandomJoinFailed()
     {
         Debug.Log("OnPhotonRandomJoinFailed");
-        PhotonNetwork.CreateRoom("Sala1");
+        PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax*2)}, null);
         //PhotonNetwork.JoinRandomRoom();
     }
 
