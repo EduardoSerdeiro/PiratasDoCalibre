@@ -52,6 +52,7 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Character\Health.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\MouseLook.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\MouseLook2.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\NetworkPlayer.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Objects\Bullet\Bullet.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Objects\Bullet\Spawn_Bullet.cs" />
@@ -85,7 +86,6 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\PlayerScoreList.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScoreboardManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
-     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\SpawnPlayer.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\TimerGame.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Vazio.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />

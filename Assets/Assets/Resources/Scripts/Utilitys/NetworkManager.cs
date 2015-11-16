@@ -18,7 +18,6 @@ public class NetworkManager : MonoBehaviour {
         	}
 	
 	void Update () {
-       
 
 	}
 
@@ -26,29 +25,38 @@ public class NetworkManager : MonoBehaviour {
     {
         PhotonNetwork.ConnectUsingSettings("PdC v0.4");
     }
-  
-    public void OnConnectedToMaster()
+
+    //public void OnConnectedToMaster()
+    //{
+    //    Debug.Log("OnConnectedToMaster");
+    //    PhotonNetwork.CreateRoom("Sala1");
+    //    //PhotonNetwork.JoinRandomRoom();
+    //}
+
+    public void OnJoinedLobby()
     {
-        Debug.Log("OnConnectedToMaster");
-        PhotonNetwork.CreateRoom("Sala1");
-        //PhotonNetwork.JoinRandomRoom();
+       
+        PhotonNetwork.JoinRandomRoom();
     }
-   
     void OnPhotonRandomJoinFailed()
     {
         Debug.Log("OnPhotonRandomJoinFailed");
-        //PhotonNetwork.CreateRoom("Sala2");
-        PhotonNetwork.JoinRandomRoom();
-       // PhotonNetwork.JoinRoom("Sala1");
+        PhotonNetwork.CreateRoom("Sala1");
+        //PhotonNetwork.JoinRandomRoom();
     }
 
     void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom");
-        //PhotonNetwork.JoinRoom("Sala1");
         //Debug.Log(PhotonNetwork.room.name);
         SpawnPlayers();
         timeGame.SetStartTime(true);
+    }
+
+    void OnGUI()
+    {
+        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+
     }
 
     private void SpawnPlayers()
@@ -63,9 +71,5 @@ public class NetworkManager : MonoBehaviour {
         MyPlayer.transform.GetChild(0).GetComponent<Camera>().enabled = true;
     }
 
-    void OnGUI()
-    {
-        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
-
-    }
+   
 }
