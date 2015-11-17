@@ -74,7 +74,7 @@ public class NetworkManager : MonoBehaviour {
 
         GameObject MySpawn = SpawnsPlayers[Random.Range(0, SpawnsPlayers.Length)];
 
-        GameObject MyPlayer = (GameObject)PhotonNetwork.Instantiate("Prefabs/Characters/Player", MySpawn.transform.position, MySpawn.transform.rotation, 0);
+        GameObject MyPlayer = (GameObject)PhotonNetwork.Instantiate("Prefabs/Characters/PlayerPirataRed", MySpawn.transform.position, MySpawn.transform.rotation, 0);
         ((MonoBehaviour)MyPlayer.GetComponent("FirstPersonController")).enabled = true;
         MyPlayer.GetComponent<CharacterController>().enabled = true;
        ((MonoBehaviour)MyPlayer.GetComponent("Agachar")).enabled = true;
