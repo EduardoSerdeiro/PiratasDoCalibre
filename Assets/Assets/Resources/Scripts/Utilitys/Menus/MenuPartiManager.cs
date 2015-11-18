@@ -7,7 +7,7 @@ public class MenuPartiManager : MonoBehaviour
 
     private Button BtnMode, BtnTime, BtnVoltar, BtnCriarSala;
 
-    private Text TxtMode, TxtTime;
+    private Text TxtMode, TxtTime, TxtNumRooms;
 
     private float tempoMinu;
     private short contTime ;
@@ -34,11 +34,15 @@ public class MenuPartiManager : MonoBehaviour
         TxtMode.text = "4x4 Jogadores";
         playerTeam = 4;
         PlayerPrefs.SetInt("playerTeam", playerTeam);
+
+        TxtNumRooms = this.transform.GetChild(6).GetComponentInChildren<Text>();
+
 	}
 
     void Update()
     {
-       
+        TxtNumRooms.text = "Quantidade de Salas " + PhotonNetwork.countOfRooms;
+
     }
 
 

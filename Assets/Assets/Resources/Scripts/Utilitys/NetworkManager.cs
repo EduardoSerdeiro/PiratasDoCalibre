@@ -21,7 +21,7 @@ public class NetworkManager : MonoBehaviour {
             playersMax = PlayerPrefs.GetInt("playerTeam");
         }
 
-        Debug.Log("playMax : " +playersMax);
+       // Debug.Log("playMax : " +playersMax);
         PhotonNetwork.autoJoinLobby = true;
         //PhotonNetwork.logLevel = PhotonLogLevel.Full;
         Connect();
@@ -46,13 +46,14 @@ public class NetworkManager : MonoBehaviour {
 
     public void OnJoinedLobby()
     {
-        PhotonNetwork.JoinRandomRoom();
+        PhotonNetwork.JoinOrCreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
+        //PhotonNetwork.JoinRandomRoom();
     }
     void OnPhotonRandomJoinFailed()
     {
         Debug.Log("OnPhotonRandomJoinFailed");
-        PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax*2)}, null);
-        //PhotonNetwork.JoinRandomRoom();
+       // PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax*2)}, null);
+        PhotonNetwork.JoinRandomRoom();
     }
 
     void OnJoinedRoom()
@@ -66,7 +67,7 @@ public class NetworkManager : MonoBehaviour {
     void OnGUI()
     {
         GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
-
+        GUI.Label(new Rect(Screen.width - 100, 20, 150, 50), "Ping: " + PhotonNetwork.GetPing().ToString());
     }
 
     private void SpawnPlayers()
