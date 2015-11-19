@@ -79,10 +79,12 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\WaypointCircuit.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FpsGame.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuConfigManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuLoginManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuPartiManager.cs" />
-     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\NetworkManager.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\NetworkManager\NetworkManager.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\PingGame.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\PlayerScoreList.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScoreboardManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
