@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Assets\Resources\Scripts\Character\Agachar.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\AtqCorpo.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\FirstPersonController.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\HeadBob.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Character\Health.cs" />
