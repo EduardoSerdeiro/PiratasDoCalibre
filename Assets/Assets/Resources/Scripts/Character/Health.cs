@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
         if (col.gameObject.tag == "Bullet")
         {
             TakeDamage(Bullet.damageBullet);
-            Debug.Log("Recebeu dano da bala");
+            //Debug.Log("Recebeu dano da bala");
 
         }
 
