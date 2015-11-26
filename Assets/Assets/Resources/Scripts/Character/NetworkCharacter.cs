@@ -15,8 +15,8 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 
     void Start()
     {
-        enviar = new Thread(EnviarDadosPlayer);
-        receber = new Thread(ReceberDadosPlayer);
+     //   enviar = new Thread(EnviarDadosPlayer);
+     //   receber = new Thread(ReceberDadosPlayer);
         
 
     }
@@ -38,36 +38,42 @@ public class NetworkCharacter : Photon.MonoBehaviour {
        
         if (stream.isWriting)
         {
-            enviar.Start();
-            System.Threading.Thread.Sleep(5);
+            stream.SendNext(this.transform);
+            stream.SendNext(this.transform.rotation);
+
+//            enviar.Start();
+  //          System.Threading.Thread.Sleep(5);
             Debug.Log("Enviando dados");
         }
 
         if (!stream.isWriting)
         {
-            receber.Start();
-            System.Threading.Thread.Sleep(5);
+            this.corretPlayerPos = (Vector3)stream.ReceiveNext();
+            this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
+
+//            receber.Start();
+  //          System.Threading.Thread.Sleep(5);
             Debug.Log("Recebendo Dados");
         }
 
        
     }
 
-    public void EnviarDadosPlayer()
-    {
+    //public void EnviarDadosPlayer()
+    //{
 
-        stream.SendNext(this.transform);
-        stream.SendNext(this.transform.rotation);
+    //    stream.SendNext(this.transform);
+    //    stream.SendNext(this.transform.rotation);
 
-    }
+    //}
 
-    public void ReceberDadosPlayer()
-    {
+    //public void ReceberDadosPlayer()
+    //{
        
-            this.corretPlayerPos = (Vector3)stream.ReceiveNext();
-            this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
+    //        this.corretPlayerPos = (Vector3)stream.ReceiveNext();
+    //        this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
 
-    }
+    //}
 
 
    

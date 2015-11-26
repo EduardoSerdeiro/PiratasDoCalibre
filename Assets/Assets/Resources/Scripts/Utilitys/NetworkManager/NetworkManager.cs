@@ -9,7 +9,7 @@ public class NetworkManager : MonoBehaviour {
 
     public GameObject[] SpawnsPlayers;
 
-
+    public float respawnTime;
 
 	void Start () {
         timeGame = new TimerGame();
@@ -80,6 +80,18 @@ public class NetworkManager : MonoBehaviour {
         MyPlayer.GetComponent<CharacterController>().enabled = true;
        ((MonoBehaviour)MyPlayer.GetComponent("Agachar")).enabled = true;
         MyPlayer.transform.GetChild(0).GetComponent<Camera>().enabled = true;
+    }
+
+    public void RespawnPlayer()
+    {
+        if (respawnTime > 0)
+        {
+            respawnTime -= Time.deltaTime;
+        }
+        else if (respawnTime <= 0)
+        {
+            SpawnPlayers();
+        }
     }
 
    

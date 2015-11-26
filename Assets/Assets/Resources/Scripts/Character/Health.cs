@@ -7,6 +7,9 @@ public class Health : MonoBehaviour
 
     [SerializeField]private float currentHealth;
 
+    [SerializeField]
+    private float TimeRespawn;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -23,11 +26,19 @@ public class Health : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        Die();
+
+    }
+
+    private void Die()
+    {
         if (currentHealth <= 0)
         {
             Destroy(this.gameObject);
-        }
+            NetworkManager nm = GameObject.FindObjectOfType<NetworkManager>();
+            nm.respawnTime = TimeRespawn;
 
+        }
     }
 
     public float GetCurrHealth()
@@ -40,8 +51,7 @@ public class Health : MonoBehaviour
         if (col.gameObject.tag == "Bullet")
         {
             TakeDamage(Bullet.damageBullet);
-            //Debug.Log("Recebeu dano da bala");
-
+            Debug.Log("Recebeu dano da bala");
         }
 
    
