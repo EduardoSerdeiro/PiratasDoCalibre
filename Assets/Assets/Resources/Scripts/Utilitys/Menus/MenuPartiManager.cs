@@ -48,7 +48,7 @@ public class MenuPartiManager : MonoBehaviour
 
     public void MenuVoltar()
     {
-        Application.LoadLevel("MenuLogin");
+        Application.LoadLevel("MainMenu");
     }
 
 

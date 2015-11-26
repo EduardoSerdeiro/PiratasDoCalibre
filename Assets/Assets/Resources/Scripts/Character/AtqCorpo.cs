@@ -26,11 +26,19 @@ public class AtqCorpo : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            if (Input.GetMouseButtonDown(1) && timeGolpe >= cooldownGolpe)
+            
+            if (Input.GetMouseButtonDown(1))
             {
-                GameObject inimigo = col.gameObject;
-                inimigo.GetComponent<Health>().TakeDamage(damageGolpe);
+                //animação --
+
+                if (timeGolpe >= cooldownGolpe)
+                {
+                    GameObject inimigo = col.gameObject;
+                    inimigo.GetComponent<Health>().TakeDamage(damageGolpe);
+                }
+
                 timeGolpe = 0;
+
             }
 
         }

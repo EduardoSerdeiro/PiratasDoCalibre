@@ -79,7 +79,7 @@ public Text txtResolu;
 
     public void Voltar()
     {
-        Application.LoadLevel("MenuLogin");
+        Application.LoadLevel("MainMenu");
     }
 
 }

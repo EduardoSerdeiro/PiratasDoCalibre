@@ -88,7 +88,7 @@ public class MenuLoginManager : MonoBehaviour {
         if (conn.Logar(inputLogin.text, inputSenha.text))
         {
             texStatus.text = "Acesso Permitido";
-            Application.LoadLevel("MenuPartida");
+            Application.LoadLevel("MainMenu");
         }
         else
         {
