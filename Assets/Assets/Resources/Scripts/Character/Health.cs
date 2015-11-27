@@ -16,7 +16,6 @@ public class Health : MonoBehaviour
         
     }
 
-
     void Update()
     {
         
@@ -36,8 +35,8 @@ public class Health : MonoBehaviour
         {
             Destroy(this.gameObject);
             NetworkManager nm = GameObject.FindObjectOfType<NetworkManager>();
-            nm.respawnTime = TimeRespawn;
-
+            nm.respawnTime = TimeRespawn + nm.contMorte;
+           // nm.RespawnPlayer();
         }
     }
 

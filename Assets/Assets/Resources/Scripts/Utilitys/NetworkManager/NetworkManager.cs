@@ -9,7 +9,9 @@ public class NetworkManager : MonoBehaviour {
 
     public GameObject[] SpawnsPlayers;
 
-    public float respawnTime;
+   [HideInInspector] public float respawnTime;
+
+   [HideInInspector] public int contMorte = 0;
 
 	void Start () {
         timeGame = new TimerGame();
@@ -29,7 +31,7 @@ public class NetworkManager : MonoBehaviour {
         	}
 	
 	void Update () {
-
+        RespawnPlayer();
 	}
 
     public void Connect()
@@ -88,9 +90,13 @@ public class NetworkManager : MonoBehaviour {
         {
             respawnTime -= Time.deltaTime;
         }
-        else if (respawnTime <= 0)
+        else if (respawnTime < 0)
         {
             SpawnPlayers();
+            respawnTime = 0;
+
+            if(contMorte < 56)
+            contMorte++;
         }
     }
 
