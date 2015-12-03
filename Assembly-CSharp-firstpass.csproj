@@ -74,22 +74,22 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="I18N">
- <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.dll</HintPath>
+ <HintPath>C:/Users/Bubex/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.dll</HintPath>
  </Reference>
  <Reference Include="I18N.West">
- <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.West.dll</HintPath>
+ <HintPath>C:/Users/Bubex/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/I18N.West.dll</HintPath>
  </Reference>
  <Reference Include="MySql.Data">
- <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
+ <HintPath>C:/Users/Bubex/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
+ <HintPath>C:/Users/Bubex/Documents/GitHub/PiratasDoCalibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Bubex/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/W7/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Bubex/Documents/GitHub/PiratasDoCalibre/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
