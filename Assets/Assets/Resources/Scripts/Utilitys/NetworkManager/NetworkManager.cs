@@ -58,12 +58,9 @@ public class NetworkManager : MonoBehaviour {
 
     public void OnJoinedLobby()
     {
-<<<<<<< HEAD
         RoomOptions roomOp = new RoomOptions() { isVisible = true, maxPlayers = (byte)(playersMax) };
         PhotonNetwork.JoinOrCreateRoom("Sala1", roomOp, TypedLobby.Default);
-=======
         //PhotonNetwork.JoinOrCreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
->>>>>>> 48cca46f5784d40364b4c108be4d24f37558777b
         //PhotonNetwork.JoinRandomRoom();
     }
     void OnPhotonRandomJoinFailed()
@@ -76,15 +73,12 @@ public class NetworkManager : MonoBehaviour {
     void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom");
-<<<<<<< HEAD
         //Debug.Log(PhotonNetwork.room.name);
        // if(PhotonNetwork.countOfPlayersInRooms == playersMax)
 
         SpawnPlayers();
 
         timeGame.SetStartTime(true);
-=======
->>>>>>> 48cca46f5784d40364b4c108be4d24f37558777b
     }
 
     void OnGUI()
