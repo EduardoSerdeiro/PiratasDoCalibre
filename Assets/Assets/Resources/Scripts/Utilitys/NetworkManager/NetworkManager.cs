@@ -61,22 +61,22 @@ public class NetworkManager : MonoBehaviour {
         RoomOptions roomOp = new RoomOptions() { isVisible = true, maxPlayers = (byte)(playersMax) };
         PhotonNetwork.JoinOrCreateRoom("Sala1", roomOp, TypedLobby.Default);
         //PhotonNetwork.JoinOrCreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
-        //PhotonNetwork.JoinRandomRoom();
+//PhotonNetwork.JoinRandomRoom();
     }
     void OnPhotonRandomJoinFailed()
     {
         Debug.Log("OnPhotonRandomJoinFailed");
-       // PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax*2)}, null);
+       // PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
         PhotonNetwork.JoinRandomRoom();
     }
 
     void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom");
-        //Debug.Log(PhotonNetwork.room.name);
-       // if(PhotonNetwork.countOfPlayersInRooms == playersMax)
+        Debug.Log(PhotonNetwork.room.name);
+        if (PhotonNetwork.countOfPlayersInRooms == playersMax)
 
-        SpawnPlayers();
+            SpawnPlayers();
 
         timeGame.SetStartTime(true);
     }
@@ -90,7 +90,8 @@ public class NetworkManager : MonoBehaviour {
 
         else if (PhotonNetwork.room == null)
         {
-            // Create Room
+
+             //Create Room
             if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 20, 250, 40), "Criar Sala"))
             {
                 PhotonNetwork.CreateRoom("Sala 1", new RoomOptions() { maxPlayers = 8, isOpen = true, isVisible = true }, lobbyName);
@@ -99,12 +100,13 @@ public class NetworkManager : MonoBehaviour {
             // Join Room
             if (roomsList != null)
             {
+                Debug.Log("dentro room != null");
                 for (int i = 0; i < roomsList.Length; i++)
                 {
                     if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2 + 20, 250, 40), "Logar em: " + roomsList[i].name + " " + "(" + roomsList[i].playerCount + "/" + roomsList[i].maxPlayers + ")"))
                     {
                         PhotonNetwork.JoinRoom(roomsList[i].name);
-                        if(roomsList[i].playerCount >= 2)
+                        if(roomsList[i].playerCount >= 1)
                         {
                             SpawnPlayers();
                             timeGame.SetStartTime(true);
