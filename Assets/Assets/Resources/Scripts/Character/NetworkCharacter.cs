@@ -4,10 +4,10 @@ using System.Threading;
 
 public class NetworkCharacter : Photon.MonoBehaviour {
 
-    private System.Threading.Thread enviar = null;
-    private System.Threading.Thread receber = null;
+   // private System.Threading.Thread enviar = null;
+   // private System.Threading.Thread receber = null;
 
-    PhotonStream stream;
+   // PhotonStream stream;
 
     private Vector3 corretPlayerPos = Vector3.zero;
     private Quaternion corretPlayerRot = Quaternion.identity;
@@ -15,12 +15,13 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 
     void Start()
     {
-     //   enviar = new Thread(EnviarDadosPlayer);
-     //   receber = new Thread(ReceberDadosPlayer);
-        
+       // enviar = new Thread(EnviarDadosPlayer);
+       // receber = new Thread(ReceberDadosPlayer);
 
     }
 	
+    
+
 	void FixedUpdate () {
 
         if (!photonView.isMine)
@@ -29,8 +30,15 @@ public class NetworkCharacter : Photon.MonoBehaviour {
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, this.corretPlayerRot, Time.deltaTime * 5);
 
         }
+        //if (enviar.IsAlive)
+        //{
+        //    System.Threading.Thread.Sleep(5);
+        //}
 
-
+        //if (receber.IsAlive)
+        //{
+        //    System.Threading.Thread.Sleep(5);
+        //}
 	}
 
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -38,21 +46,20 @@ public class NetworkCharacter : Photon.MonoBehaviour {
        
         if (stream.isWriting)
         {
-            stream.SendNext(this.transform);
+             stream.SendNext(this.transform);
             stream.SendNext(this.transform.rotation);
 
-//            enviar.Start();
-  //          System.Threading.Thread.Sleep(5);
+              //enviar.Start();
+
             Debug.Log("Enviando dados");
         }
-
         if (!stream.isWriting)
         {
             this.corretPlayerPos = (Vector3)stream.ReceiveNext();
             this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
 
-//            receber.Start();
-  //          System.Threading.Thread.Sleep(5);
+            //receber.Start();
+  
             Debug.Log("Recebendo Dados");
         }
 
@@ -69,9 +76,9 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 
     //public void ReceberDadosPlayer()
     //{
-       
-    //        this.corretPlayerPos = (Vector3)stream.ReceiveNext();
-    //        this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
+
+    //    this.corretPlayerPos = (Vector3)stream.ReceiveNext();
+    //    this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
 
     //}
 

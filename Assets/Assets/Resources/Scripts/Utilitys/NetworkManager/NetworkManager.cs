@@ -11,7 +11,11 @@ public class NetworkManager : MonoBehaviour {
 
    [HideInInspector] public float respawnTime;
 
-   [HideInInspector] public int contMorte = 0;
+   [HideInInspector]
+   public int contMorte = 0;
+
+   string playerName;
+
 
 	void Start () {
         timeGame = new TimerGame();
@@ -20,10 +24,10 @@ public class NetworkManager : MonoBehaviour {
 
         if (PlayerPrefs.HasKey("playerTeam") == true)
         {
-            playersMax = PlayerPrefs.GetInt("playerTeam");
+            playersMax = PlayerPrefs.GetInt("playerTeam") * 2;
         }
 
-       // Debug.Log("playMax : " +playersMax);
+
         PhotonNetwork.autoJoinLobby = true;
         //PhotonNetwork.logLevel = PhotonLogLevel.Full;
         Connect();
@@ -31,7 +35,9 @@ public class NetworkManager : MonoBehaviour {
         	}
 	
 	void Update () {
+        
         RespawnPlayer();
+        
 	}
 
     public void Connect()
@@ -48,7 +54,8 @@ public class NetworkManager : MonoBehaviour {
 
     public void OnJoinedLobby()
     {
-        PhotonNetwork.JoinOrCreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
+        RoomOptions roomOp = new RoomOptions() { isVisible = true, maxPlayers = (byte)(playersMax) };
+        PhotonNetwork.JoinOrCreateRoom("Sala1", roomOp, TypedLobby.Default);
         //PhotonNetwork.JoinRandomRoom();
     }
     void OnPhotonRandomJoinFailed()
@@ -62,7 +69,10 @@ public class NetworkManager : MonoBehaviour {
     {
         Debug.Log("OnJoinedRoom");
         //Debug.Log(PhotonNetwork.room.name);
+       // if(PhotonNetwork.countOfPlayersInRooms == playersMax)
+
         SpawnPlayers();
+
         timeGame.SetStartTime(true);
     }
 

@@ -3,6 +3,9 @@ using System.Collections;
 
 public class MainMenuManager : MonoBehaviour {
 
+   
+
+
     public void Jogar()
     {
         Application.LoadLevel("MenuPartida");

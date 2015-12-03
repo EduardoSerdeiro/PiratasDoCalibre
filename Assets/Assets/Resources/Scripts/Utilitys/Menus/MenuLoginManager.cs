@@ -87,6 +87,8 @@ public class MenuLoginManager : MonoBehaviour {
 
         if (conn.Logar(inputLogin.text, inputSenha.text))
         {
+           // PlayerPrefs.SetString("PlayerName", inputLogin.text);
+            PhotonNetwork.playerName = inputLogin.text;
             texStatus.text = "Acesso Permitido";
             Application.LoadLevel("MainMenu");
         }
