@@ -13,10 +13,10 @@ public class MenuPartiManager : MonoBehaviour
     private short contTime ;
     private short contMode;
 
-    //team true = 4x4 / team false = 8x8;
     public short playerTeam;
 
 	void Start () {
+
 
         BtnMode = this.transform.GetChild(1).GetComponent<Button>();
         TxtMode = this.transform.GetChild(1).GetComponent<Button>().GetComponentInChildren<Text>();
@@ -35,13 +35,13 @@ public class MenuPartiManager : MonoBehaviour
         playerTeam = 4;
         PlayerPrefs.SetInt("playerTeam", playerTeam);
 
-        TxtNumRooms = this.transform.GetChild(6).GetComponentInChildren<Text>();
+       // TxtNumRooms = this.transform.GetChild(6).GetComponentInChildren<Text>();
 
 	}
 
     void Update()
     {
-        TxtNumRooms.text = "Quantidade de Salas " + PhotonNetwork.countOfRooms;
+       // TxtNumRooms.text = "Quantidade de Salas " + PhotonNetwork.countOfRooms;
 
     }
 
@@ -78,7 +78,6 @@ public class MenuPartiManager : MonoBehaviour
         }
 
         PlayerPrefs.SetFloat("tempoMinu", tempoMinu);
-
 
     }
 

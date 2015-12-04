@@ -17,17 +17,18 @@ public class TimerGame : MonoBehaviour {
     }
 
 	void Start () {
-        if (PlayerPrefs.HasKey("tempoMinu")== true)
-        {
-            minutos = PlayerPrefs.GetFloat("tempoMinu") ; 
-        }
 
+        if (PlayerPrefs.HasKey("tempoMinu") == true)
+        {
+            minutos = PlayerPrefs.GetFloat("tempoMinu");
+        }
         segundos = 01;
         milisegundos = 0;
 	}
 	
 	void Update () {
 
+       
 
         if (startTime)
         {
@@ -49,7 +50,6 @@ public class TimerGame : MonoBehaviour {
             milisegundos -= Time.deltaTime * 100;
 
             Timer.text = string.Format("{0} : {1}", minutos, segundos);
-
 
             if (minutos <= 0 && segundos <= 0 && milisegundos <= 0)
             {

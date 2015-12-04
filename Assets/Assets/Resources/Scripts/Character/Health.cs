@@ -36,6 +36,8 @@ public class Health : MonoBehaviour
             Destroy(this.gameObject);
             NetworkManager nm = GameObject.FindObjectOfType<NetworkManager>();
             nm.respawnTime = TimeRespawn + nm.contMorte;
+            GameObject mainCamera = GameObject.Find("Main Camera");
+            mainCamera.GetComponent<AudioListener>().enabled = true;
            // nm.RespawnPlayer();
         }
     }
@@ -50,7 +52,7 @@ public class Health : MonoBehaviour
         if (col.gameObject.tag == "Bullet")
         {
             TakeDamage(Bullet.damageBullet);
-            Debug.Log("Recebeu dano da bala");
+           // Debug.Log("Recebeu dano da bala");
         }
 
    
