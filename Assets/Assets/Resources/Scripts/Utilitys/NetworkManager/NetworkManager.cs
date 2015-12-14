@@ -3,18 +3,28 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour {
 
-    TimerGame timeGame;
+    MainSceneCtrlInter mainSceneInter;
 
     private int playersMax;
 
-    public GameObject[] SpawnsPlayers;
-
-   [HideInInspector] public float respawnTime;
-
-   [HideInInspector] public int contMorte = 0;
-
    string playerName;
 
+   TimerGame timeGame;
+
+   private bool iniciarPartida;
+
+   public GameObject[] SpawnsPlayers;
+
+   [HideInInspector]
+   public float respawnTime;
+
+   [HideInInspector]
+   public int contMorte = 0;
+
+   private static bool auxPartida;
+
+    [Header("Team")]
+   string strCaminho;
    //public static float tempoPartida;
 
   // private TypedLobby lobbyName = new TypedLobby("New_Lobby", LobbyType.Default);
@@ -22,25 +32,40 @@ public class NetworkManager : MonoBehaviour {
 
    void Start()
    {
-
        timeGame = new TimerGame();
-       //SpawnsPlayers = GameObject.FindObjectsOfType<SpawnPlayer>();
        SpawnsPlayers = GameObject.FindGameObjectsWithTag("Spawn");
+       mainSceneInter = new MainSceneCtrlInter();
 
-       if (PlayerPrefs.HasKey("playerTeam") == true)
-       {
-           playersMax = PlayerPrefs.GetInt("playerTeam") * 2;
-       }
+       playersMax = 8;
 
        PhotonNetwork.autoJoinLobby = true;
 
-       Connect();
+
+     //  Connect();
 
    }
 	void Update () {
-        
         RespawnPlayer();
-        
+
+        if (auxPartida == true)
+        {
+            if (PhotonNetwork.room.playerCount >= 1 )
+            {
+                iniciarPartida = true;
+                Debug.Log("entrou inicioParti");
+            }
+
+            if (iniciarPartida)
+            {
+                Debug.Log("xablau");
+                timeGame.SetStartTime(true);
+                SpawnPlayer();
+                iniciarPartida = false;
+                auxPartida = false;
+            }
+
+
+        }
 	}
 
     public void Connect()
@@ -57,32 +82,77 @@ public class NetworkManager : MonoBehaviour {
 
     public void OnJoinedLobby()
     {
-        RoomOptions roomOp = new RoomOptions() { isVisible = true, maxPlayers = (byte)(playersMax) };
-        PhotonNetwork.JoinOrCreateRoom("Sala1", roomOp, TypedLobby.Default);
-
-        //PhotonNetwork.JoinOrCreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
+      
+            Debug.Log("OnJoinedLobby");
+            RoomOptions roomOp = new RoomOptions() { isVisible = true, maxPlayers = (byte)(playersMax) };
+            PhotonNetwork.JoinOrCreateRoom("Sala1", roomOp, TypedLobby.Default);
+      
         //PhotonNetwork.JoinRandomRoom();
     }
-    void OnPhotonRandomJoinFailed()
+    public void OnPhotonRandomJoinFailed()
     {
-        Debug.Log("OnPhotonRandomJoinFailed");
-       // PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
-        PhotonNetwork.JoinRandomRoom();
+            Debug.Log("OnPhotonRandomJoinFailed");
+            // PhotonNetwork.CreateRoom("Sala1", new RoomOptions() { maxPlayers = (byte)(playersMax * 2) }, null);
+            PhotonNetwork.JoinRandomRoom();
     }
 
-    void OnJoinedRoom()
+    public void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom");
-        //Debug.Log(PhotonNetwork.room.name);
-        if (PhotonNetwork.room.playerCount == 1)
-       {
-           timeGame.SetStartTime(true);
-            SpawnPlayers();
+       // auxPartida = true;
 
+    }
+
+    public void SpawnPlayer()
+    {
+       // this.id = id;
+        GameObject MySpawn = SpawnsPlayers[Random.Range(0, SpawnsPlayers.Length)];
+
+        if (mainSceneInter.GetIdTeam() == 1)
+        {
+            strCaminho = "Prefabs/Characters/PlayerPirataRed";
+        }
+        else if (mainSceneInter.GetIdTeam() == 2)
+        {
+            strCaminho = "Prefabs/Characters/PlayerPirataBlue";
         }
 
-        //Debug.Log(PhotonNetwork.room.playerCount);
+
+        GameObject MyPlayer = (GameObject)PhotonNetwork.Instantiate(strCaminho, MySpawn.transform.position, MySpawn.transform.rotation, 0);
+        ((MonoBehaviour)MyPlayer.GetComponent("FirstPersonController")).enabled = true;
+        MyPlayer.GetComponent<CharacterController>().enabled = true;
+        ((MonoBehaviour)MyPlayer.GetComponent("Agachar")).enabled = true;
+
+        GameObject mainCamera = GameObject.Find("Main Camera");
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+
+        MyPlayer.transform.GetChild(0).GetComponent<Camera>().enabled = true;
+
+
     }
+
+    public void RespawnPlayer()
+    {
+        if (respawnTime > 0)
+        {
+            respawnTime -= Time.deltaTime;
+        }
+        else if (respawnTime < 0)
+        {
+            SpawnPlayer();
+            respawnTime = 0;
+
+            if (contMorte < 56)
+                contMorte++;
+        }
+    }
+
+    public void SetAuxPartida(bool valor)
+    {
+        auxPartida = valor;
+
+    }
+
 
     void OnGUI()
     {
@@ -119,40 +189,6 @@ public class NetworkManager : MonoBehaviour {
         //    }
         //}
        
-    }
-
-    private void SpawnPlayers()
-    {
-
-        GameObject MySpawn = SpawnsPlayers[Random.Range(0, SpawnsPlayers.Length)];
-
-        GameObject MyPlayer = (GameObject)PhotonNetwork.Instantiate("Prefabs/Characters/PlayerPirataRed", MySpawn.transform.position, MySpawn.transform.rotation, 0);
-        ((MonoBehaviour)MyPlayer.GetComponent("FirstPersonController")).enabled = true;
-        MyPlayer.GetComponent<CharacterController>().enabled = true;
-       ((MonoBehaviour)MyPlayer.GetComponent("Agachar")).enabled = true;
-
-       GameObject mainCamera = GameObject.Find("Main Camera");
-        mainCamera.GetComponent<AudioListener>().enabled = false;
-
-        MyPlayer.transform.GetChild(0).GetComponent<Camera>().enabled = true;
-
-
-    }
-
-    public void RespawnPlayer()
-    {
-        if (respawnTime > 0)
-        {
-            respawnTime -= Time.deltaTime;
-        }
-        else if (respawnTime < 0)
-        {
-            SpawnPlayers();
-            respawnTime = 0;
-
-            if(contMorte < 56)
-            contMorte++;
-        }
     }
 
    

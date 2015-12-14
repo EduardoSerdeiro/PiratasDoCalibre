@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Threading;
+//using System.Threading;
 
 public class NetworkCharacter : Photon.MonoBehaviour {
 
@@ -8,16 +8,19 @@ public class NetworkCharacter : Photon.MonoBehaviour {
    // private System.Threading.Thread receber = null;
 
    // PhotonStream stream;
+    CharacterController cc;
 
-    private Vector3 corretPlayerPos = Vector3.zero;
-    private Quaternion corretPlayerRot = Quaternion.identity;
+    private Vector3 corretPlayerPos ;
+    private Quaternion corretPlayerRot ;
 
+    public Vector3 direction = Vector3.zero;
 
     void Start()
     {
+        cc = new CharacterController();
        // enviar = new Thread(EnviarDadosPlayer);
        // receber = new Thread(ReceberDadosPlayer);
-
+        
     }
 	
     
@@ -26,19 +29,17 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 
         if (!photonView.isMine)
         {
-            this.transform.position = Vector3.Lerp(this.transform.position, this.corretPlayerPos, Time.deltaTime * 5);
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, this.corretPlayerRot, Time.deltaTime * 5);
+            this.transform.position = Vector3.Lerp(this.transform.position, this.corretPlayerPos, Time.deltaTime * 2);
+            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, this.corretPlayerRot, Time.deltaTime * 2);
 
         }
-        //if (enviar.IsAlive)
-        //{
-        //    System.Threading.Thread.Sleep(5);
-        //}
-
-        //if (receber.IsAlive)
-        //{
-        //    System.Threading.Thread.Sleep(5);
-        //}
+        else
+        {
+            Vector3 dist = direction * 10 * Time.deltaTime;
+            dist.y = 10 * Time.deltaTime;
+            cc.Move(dist);
+        }
+      
 	}
 
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -46,21 +47,18 @@ public class NetworkCharacter : Photon.MonoBehaviour {
        
         if (stream.isWriting)
         {
-             stream.SendNext(this.transform);
+            stream.SendNext(this.transform);
             stream.SendNext(this.transform.rotation);
 
               //enviar.Start();
-
-            Debug.Log("Enviando dados");
         }
-        if (!stream.isWriting)
+        else
         {
+            
             this.corretPlayerPos = (Vector3)stream.ReceiveNext();
             this.corretPlayerRot = (Quaternion)stream.ReceiveNext();
-
             //receber.Start();
   
-            Debug.Log("Recebendo Dados");
         }
 
        

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class MenuPartiManager : MonoBehaviour
 {
-
     private Button BtnMode, BtnTime, BtnVoltar, BtnCriarSala;
 
     private Text TxtMode, TxtTime, TxtNumRooms;
@@ -13,11 +12,13 @@ public class MenuPartiManager : MonoBehaviour
     private short contTime ;
     private short contMode;
 
-    public short playerTeam;
+    private short playerTeam;
+
+    public int criaSala;
 
 	void Start () {
 
-
+        
         BtnMode = this.transform.GetChild(1).GetComponent<Button>();
         TxtMode = this.transform.GetChild(1).GetComponent<Button>().GetComponentInChildren<Text>();
         BtnTime = this.transform.GetChild(3).GetComponent<Button>();
@@ -35,13 +36,13 @@ public class MenuPartiManager : MonoBehaviour
         playerTeam = 4;
         PlayerPrefs.SetInt("playerTeam", playerTeam);
 
-       // TxtNumRooms = this.transform.GetChild(6).GetComponentInChildren<Text>();
-
+        TxtNumRooms = this.transform.GetChild(6).GetComponentInChildren<Text>();
 	}
 
+  
     void Update()
     {
-       // TxtNumRooms.text = "Quantidade de Salas " + PhotonNetwork.countOfRooms;
+        TxtNumRooms.text = "Quantidade de salas criadas: " + PhotonNetwork.countOfRooms;
 
     }
 
@@ -104,10 +105,25 @@ public class MenuPartiManager : MonoBehaviour
 
     public void CriarSala()
     {
+        criaSala = 1;
+        PlayerPrefs.SetInt("criaSala", criaSala);
         Application.LoadLevel("MainScene");
-       //PhotonNetwork.LoadLevel("MainScene");
-
+        //PhotonNetwork.LoadLevel("MainScene");
 
     }
 
+    public void EntrarSala()
+    {
+        criaSala = 0;
+        PlayerPrefs.SetInt("criaSala", criaSala);
+        Application.LoadLevel("MainScene");
+    }
+
+    void OnGUI()
+    {
+        if (PhotonNetwork.connected)
+        {
+            GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+        }
+    }
 }

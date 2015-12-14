@@ -11,6 +11,10 @@ public class ScoreboardManager : MonoBehaviour {
 
 	void Start () {
 
+
+        SetScore(PhotonNetwork.player.name, "Kills", 0);
+        SetScore(PhotonNetwork.player.name, "Deaths", 0);
+        SetScore(PhotonNetwork.player.name, "Gold", 0);
         SetScore("Dudu", "Kills", 9);
         SetScore("Dudu", "Deaths", 10);
         SetScore("Dudu", "Gold", 100);
@@ -22,10 +26,8 @@ public class ScoreboardManager : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            ADD_KILL();
-        }
+
+
     }
 
    private void Init()
@@ -94,10 +96,10 @@ public class ScoreboardManager : MonoBehaviour {
         return changeCounter;
     }
 
-    public void ADD_KILL()
-    {
-        ChangeScore("Dudu", "Kills", 1);
-    }
+    ////public void ADD_KILL()
+    ////{
+    ////    ChangeScore("Dudu", "Kills", 1);
+    ////}
 
 
    
