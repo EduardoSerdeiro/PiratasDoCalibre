@@ -50,13 +50,7 @@ public class MainSceneCtrlInter : MonoBehaviour {
 	
 	void Update () 
     {
-        //if (Equipe.activeSelf)
-        //{
-        //    JogadoresRed.text = PhotonNetwork.room.playerCount.ToString();
-        //}
-
-        //testando somente aparecer quando conectar
-        if (InterAguardar.activeSelf )
+        if (InterAguardar.activeSelf)
         {
             JogadoresSala.text = "Jogadores na sala: "+ PhotonNetwork.room.playerCount.ToString();
             if (PhotonNetwork.room.playerCount >= 1)
@@ -89,8 +83,6 @@ public class MainSceneCtrlInter : MonoBehaviour {
     public void EscolherPersonagem()
     {
         InterPersonagem.SetActive(false);
-
-     //  if(PhotonNetwork.connected == false)
         InterAguardar.SetActive(true);
     }
 

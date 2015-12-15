@@ -27,8 +27,20 @@ public class Bullet : MonoBehaviour
         Destroy(this.gameObject, maxSegLife);
     }
 
-  
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            Debug.Log("Bala no jogador");
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+            Debug.Log("Colidiu com algum objeto do mapa");
+        }
 
 
+    }
 
 }

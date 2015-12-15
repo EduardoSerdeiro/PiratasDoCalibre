@@ -52,12 +52,12 @@ public class NetworkManager : MonoBehaviour {
             if (PhotonNetwork.room.playerCount >= 1 )
             {
                 iniciarPartida = true;
-                Debug.Log("entrou inicioParti");
+               // Debug.Log("entrou inicioParti");
             }
 
             if (iniciarPartida)
             {
-                Debug.Log("xablau");
+                //Debug.Log("xablau");
                 timeGame.SetStartTime(true);
                 SpawnPlayer();
                 iniciarPartida = false;

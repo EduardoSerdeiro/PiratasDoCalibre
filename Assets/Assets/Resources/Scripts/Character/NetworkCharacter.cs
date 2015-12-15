@@ -35,9 +35,9 @@ public class NetworkCharacter : Photon.MonoBehaviour {
         }
         else
         {
-            Vector3 dist = direction * 10 * Time.deltaTime;
-            dist.y = 10 * Time.deltaTime;
-            cc.Move(dist);
+            //Vector3 dist = direction * 10 * Time.deltaTime;
+            //dist.y = 10 * Time.deltaTime;
+            //cc.Move(dist);
         }
       
 	}
