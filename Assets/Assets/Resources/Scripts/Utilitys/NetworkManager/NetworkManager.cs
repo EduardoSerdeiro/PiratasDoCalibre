@@ -108,13 +108,13 @@ public class NetworkManager : MonoBehaviour {
        // this.id = id;
         GameObject MySpawn = SpawnsPlayers[Random.Range(0, SpawnsPlayers.Length)];
 
-        if (mainSceneInter.GetIdTeam() == 1)
+        if (mainSceneInter.GetIdTeam() == 1 && mainSceneInter.GetId() == 1)
         {
-            strCaminho = "Prefabs/Characters/PlayerPirataRed";
+            strCaminho = "Prefabs/Characters/PlayerCarrack";
         }
         else if (mainSceneInter.GetIdTeam() == 2)
         {
-            strCaminho = "Prefabs/Characters/PlayerPirataBlue";
+            strCaminho = "Prefabs/Characters/PlayerGalleon";
         }
 
 
