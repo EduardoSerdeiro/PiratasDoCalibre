@@ -3,12 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class MainSceneCtrlInter : MonoBehaviour {
 
-    [Header("Jogar")]
-    public Button Jogar;
-
-
     [Header("ModoJogo")]
-
     public GameObject InterSala;
     public Button ModoGame;
     public Button TempoGame;
@@ -46,6 +41,10 @@ public class MainSceneCtrlInter : MonoBehaviour {
 	void Start () 
     {
         nm = new NetworkManager();
+        nm.Connect();
+        InterEquipe.SetActive(true);
+
+
 	}
 	
 	void Update () 
@@ -64,24 +63,16 @@ public class MainSceneCtrlInter : MonoBehaviour {
 
 	}
 
-    public void BtnJogar()
-    {
-        Jogar.gameObject.SetActive(false);
-       // InterSala.SetActive(true);
-        nm.Connect();
-        InterEquipe.SetActive(true);
+    //public void CriarPartida()
+    //{
+    //    //InterSala.SetActive(false);
+    //    InterEquipe.SetActive(true);
 
-    }
-
-    public void CriarPartida()
-    {
-        //InterSala.SetActive(false);
-        InterEquipe.SetActive(true);
-
-    }
+    //}
 
     public void EscolherPersonagem()
     {
+        InterEquipe.SetActive(false);
         InterPersonagem.SetActive(false);
         InterAguardar.SetActive(true);
     }
@@ -91,10 +82,12 @@ public class MainSceneCtrlInter : MonoBehaviour {
         idTeam = 1;
        // SetIdTeam(1);
         id = 1;
-        InterEquipe.SetActive(false);
+       // InterEquipe.SetActive(false);
         InterPersonagem.SetActive(true);
         InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
-        Debug.Log("idteam " + idTeam);
+
+        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
+       // Debug.Log("idteam " + idTeam);
     }
 
     public void EquipeBlue()
@@ -102,35 +95,39 @@ public class MainSceneCtrlInter : MonoBehaviour {
         idTeam = 2;
        // SetIdTeam(2);
         id = 1;
-        InterEquipe.SetActive(false);
+      //  InterEquipe.SetActive(false);
         InterPersonagem.SetActive(true);
         InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
-    
-    }
+        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
 
+    }
+    
     public void BtnBack()
     {
         if (idTeam == 1 && id == 1)
         {
             id = 2;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Eloise;
-
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Eloise";
         }
         else if (idTeam == 2 && id == 1)
         {
             id = 2;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Betta;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Betta";
 
         }
         else if (idTeam == 1 && id == 2)
         {
             id = 1;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
         }
         else if (idTeam == 2 && id == 2)
         {
             id = 1;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
 
         }
 
@@ -143,24 +140,28 @@ public class MainSceneCtrlInter : MonoBehaviour {
         {
             id = 2;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Eloise;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Eloise";
 
         }
         else if (idTeam == 2 && id == 1)
         {
             id = 2;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Betta;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Betta";
 
         }
         else if (idTeam == 1 && id == 2)
         {
             id = 1;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
 
         }
         else if (idTeam == 2 && id == 2)
         {
             id = 1;
             InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
+            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
 
         }
 
@@ -169,6 +170,11 @@ public class MainSceneCtrlInter : MonoBehaviour {
     public int GetIdTeam()
     {
         return idTeam;
+    }
+
+    public int GetId()
+    {
+        return id;
     }
 
     //public void SetIdTeam(int id_Team)

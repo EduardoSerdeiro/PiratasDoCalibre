@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: a2ce7c95fd5a8cd47b6f3d8d2ba1a2ff
+timeCreated: 1450326922
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ankle_l
+    100002: ankle_r
+    100004: base
+    100006: Betta
+    100008: chest
+    100010: collarbone_l
+    100012: collarbone_r
+    100014: fingers1_l
+    100016: fingers1_r
+    100018: fingers2_l
+    100020: fingers2_r
+    100022: foot_l
+    100024: foot_r
+    100026: hand_l
+    100028: hand_r
+    100030: head
+    100032: hip_l
+    100034: hip_r
+    100036: IKarm_l
+    100038: IKarm_r
+    100040: IKelbow_l
+    100042: IKelbow_r
+    100044: IKknee_l
+    100046: IKknee_r
+    100048: index1_l
+    100050: index1_r
+    100052: index2_l
+    100054: index2_r
+    100056: lowerarm_l
+    100058: lowerarm_r
+    100060: lowerleg_l
+    100062: lowerleg_r
+    100064: Modelo
+    100066: //RootNode
+    100068: neck
+    100070: root
+    100072: spine
+    100074: stomach
+    100076: thumb1_l
+    100078: thumb1_r
+    100080: thumb2_l
+    100082: thumb2_r
+    100084: toe_l
+    100086: toe_r
+    100088: upperarm_l
+    100090: upperarm_r
+    100092: upperleg_l
+    100094: upperleg_r
+    100096: waist
+    400000: ankle_l
+    400002: ankle_r
+    400004: base
+    400006: Betta
+    400008: chest
+    400010: collarbone_l
+    400012: collarbone_r
+    400014: fingers1_l
+    400016: fingers1_r
+    400018: fingers2_l
+    400020: fingers2_r
+    400022: foot_l
+    400024: foot_r
+    400026: hand_l
+    400028: hand_r
+    400030: head
+    400032: hip_l
+    400034: hip_r
+    400036: IKarm_l
+    400038: IKarm_r
+    400040: IKelbow_l
+    400042: IKelbow_r
+    400044: IKknee_l
+    400046: IKknee_r
+    400048: index1_l
+    400050: index1_r
+    400052: index2_l
+    400054: index2_r
+    400056: lowerarm_l
+    400058: lowerarm_r
+    400060: lowerleg_l
+    400062: lowerleg_r
+    400064: Modelo
+    400066: //RootNode
+    400068: neck
+    400070: root
+    400072: spine
+    400074: stomach
+    400076: thumb1_l
+    400078: thumb1_r
+    400080: thumb2_l
+    400082: thumb2_r
+    400084: toe_l
+    400086: toe_r
+    400088: upperarm_l
+    400090: upperarm_r
+    400092: upperleg_l
+    400094: upperleg_r
+    400096: waist
+    4300000: Modelo
+    7400000: Default Take
+    7400002: Crouch
+    7400004: CrouchShoot
+    7400006: Death
+    7400008: Idle
+    7400010: Jump
+    7400012: Reload
+    7400014: Run
+    7400016: Run_001
+    7400018: Run_002
+    7400020: Shoot
+    9500000: //RootNode
+    13700000: Modelo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
