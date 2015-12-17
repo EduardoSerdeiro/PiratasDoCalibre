@@ -6,45 +6,49 @@ public class MainMenuHlightedColor : MonoBehaviour
     public Button btnJogar;
     public Text textJogar;
 
+    private Color normal = new Color(0.15f,0.11f,0.07f);
+    private Color highLight = new Color(0.69f, 0.56f, 0.47f);
+
     public Text textConfig;
     public Text textCredits;
     public Text textSair;
 
     public void TxtJgarColorEnter()
     {
-        textJogar.color = Color.Lerp(Color.red, Color.yellow, 0.3f);
+        textJogar.color = highLight;
     }
     public void TxtJgarColorExit()
     {
-        textJogar.color = Color.white;
+        //textJogar.color = Color.white;
+        textJogar.color = normal;
     }
 
 
     public void TxtConfigColorEnter()
     {
-        textConfig.color = Color.Lerp(Color.red, Color.yellow, 0.3f);
+        textConfig.color = highLight;
     }
     public void TxtConfigColorExit()
     {
-        textConfig.color = Color.white;
+        textConfig.color = normal;
     }
 
     public void TxtCreditColorEnter()
     {
-        textCredits.color = Color.Lerp(Color.red, Color.yellow, 0.3f);
+        textCredits.color = highLight;
     }
     public void TxtCreditColorExit()
     {
-        textCredits.color = Color.white;
+        textCredits.color = normal;
     }
 
     public void TxtQuitColorEnter()
     {
-        textSair.color = Color.Lerp(Color.red, Color.yellow, 0.3f);
+        textSair.color = highLight;
     }
     public void TxtQuitColorExit()
     {
-        textSair.color = Color.white;
+        textSair.color = normal;
     }
 
 }
