@@ -5,30 +5,26 @@ using UnityEngine.UI;
 public class MenuConfigManager : MonoBehaviour {
 
    [SerializeField]private Button btnMutar;
-   [SerializeField]
-   private Slider sliderVolume;
+   [SerializeField]private Slider sliderVolume;
+
+   public Sprite iconeSom;
+   public Sprite iconeSomX;
 
    [SerializeField]
    private Button btnResolu;
-
-public Text txtResolu;
-
 
    private int contadorResolu = 0;
 
 	void Start () {
         btnMutar = this.transform.GetChild(1).GetComponent<Button>();
         sliderVolume = this.transform.GetChild(0).GetComponent<Slider>();
-        btnResolu = this.transform.GetChild(5).GetComponent<Button>();
-        txtResolu = this.transform.GetChild(5).GetComponentInChildren<Text>();
-        txtResolu.text = "Resolução: " + Screen.width + "x" + Screen.height;
+        btnResolu.GetComponentInChildren<Text>().text =  Screen.width + "x" + Screen.height;
 
 	}
 	
 	void Update () {
 
         AudioListener.volume = sliderVolume.value;
-
 
 	}
 
@@ -38,11 +34,13 @@ public Text txtResolu;
         if (AudioListener.pause)
         {
              AudioListener.pause = false;
+             btnMutar.GetComponent<Image>().sprite = iconeSom;//(Sprite)Resources.Load("Textures/Interfaces/Icones/iconeSomX");
           
         }
         else
         {
             AudioListener.pause = true;
+            btnMutar.GetComponent<Image>().sprite = iconeSomX;
       
         }
 
@@ -54,19 +52,19 @@ public Text txtResolu;
         if (contadorResolu == 0)
         {
             Screen.SetResolution(1366, 766, true);
-            txtResolu.text = "Resolução: " + "1366x766";
+            btnResolu.GetComponentInChildren<Text>().text = "1366x766";
             contadorResolu++;
         }
         else if (contadorResolu == 1)
         {
             Screen.SetResolution(1024, 768, true);
-            txtResolu.text = "Resolução: " + "1024x766";
+            btnResolu.GetComponentInChildren<Text>().text = "1024x766";
             contadorResolu++;
         }
         else if (contadorResolu == 2)
         {
             Screen.SetResolution(800, 600, true);
-            txtResolu.text = "Resolução: " + "800x600";
+            btnResolu.GetComponentInChildren<Text>().text = "800x600";
             contadorResolu++;
         }
 
@@ -79,6 +77,7 @@ public Text txtResolu;
 
     public void Voltar()
     {
+       
         Application.LoadLevel("MainMenu");
     }
 

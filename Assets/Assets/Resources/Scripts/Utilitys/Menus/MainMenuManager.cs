@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MainMenuManager : MonoBehaviour {
 
+
     public void Jogar()
     {
         Application.LoadLevel("MainScene");
@@ -10,6 +11,8 @@ public class MainMenuManager : MonoBehaviour {
 
     public void Config()
     {
+        GameObject background = GameObject.Find("ImgFundo");
+     
         Application.LoadLevel("Config");
     }
 
@@ -20,7 +23,7 @@ public class MainMenuManager : MonoBehaviour {
 
     public void Sair()
     {
-        Application.Quit();
+       Application.Quit();
     }
 
 }

@@ -31,6 +31,7 @@ public class MenuLoginManager : MonoBehaviour {
 
         #endregion
 
+
     }
 
     public void Inicio()
@@ -90,6 +91,7 @@ public class MenuLoginManager : MonoBehaviour {
            // PlayerPrefs.SetString("PlayerName", inputLogin.text);
             PhotonNetwork.playerName = inputLogin.text;
             texStatus.text = "Acesso Permitido";
+         
             Application.LoadLevel("MainMenu");
         }
         else

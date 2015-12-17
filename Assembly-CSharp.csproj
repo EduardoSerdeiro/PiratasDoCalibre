@@ -84,6 +84,7 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\WaypointProgressTracker.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FpsGame.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\MainSceneCtrlInter.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MainMenuHlightedColor.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MainMenuManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuConfigManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuCreditsManager.cs" />
