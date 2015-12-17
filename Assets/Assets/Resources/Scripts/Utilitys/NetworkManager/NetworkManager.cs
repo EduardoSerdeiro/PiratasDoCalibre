@@ -112,9 +112,17 @@ public class NetworkManager : MonoBehaviour {
         {
             strCaminho = "Prefabs/Characters/PlayerCarrack";
         }
-        else if (mainSceneInter.GetIdTeam() == 2)
+        else if (mainSceneInter.GetIdTeam() == 2 && mainSceneInter.GetId() == 1)
         {
             strCaminho = "Prefabs/Characters/PlayerGalleon";
+        }
+        if (mainSceneInter.GetIdTeam() == 1 && mainSceneInter.GetId() == 2)
+        {
+            strCaminho = "Prefabs/Characters/PlayerEloise";
+        }
+        else if (mainSceneInter.GetIdTeam() == 2 && mainSceneInter.GetId() ==2)
+        {
+            strCaminho = "Prefabs/Characters/PlayerBetta";
         }
 
 

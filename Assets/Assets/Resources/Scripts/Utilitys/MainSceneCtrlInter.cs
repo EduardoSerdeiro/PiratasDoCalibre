@@ -32,6 +32,12 @@ public class MainSceneCtrlInter : MonoBehaviour {
     public Sprite Galeon;
     public Sprite Betta;
 
+    [Header("ButtonsPersonagens")]
+    public GameObject btnP1;
+    public GameObject btnP2;
+    public GameObject btnP3;
+    public GameObject btnP4;
+
 
     NetworkManager nm;
 
@@ -81,12 +87,15 @@ public class MainSceneCtrlInter : MonoBehaviour {
     {
         idTeam = 1;
        // SetIdTeam(1);
-        id = 1;
+       // id = 1;
        // InterEquipe.SetActive(false);
         InterPersonagem.SetActive(true);
-        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
-
-        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
+      //  InterPersonagem.transform.GetChild(5).GetComponent<Image>().sprite = Carrack;
+        btnP1.SetActive(true);
+        btnP2.SetActive(true);
+        btnP3.SetActive(false);
+        btnP4.SetActive(false);
+      
        // Debug.Log("idteam " + idTeam);
     }
 
@@ -94,78 +103,94 @@ public class MainSceneCtrlInter : MonoBehaviour {
     {
         idTeam = 2;
        // SetIdTeam(2);
-        id = 1;
+
+       // id = 1;
       //  InterEquipe.SetActive(false);
         InterPersonagem.SetActive(true);
-        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
-        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
 
+        btnP1.SetActive(false);
+        btnP2.SetActive(false);
+        btnP3.SetActive(true);
+        btnP4.SetActive(true);
+     
     }
-    
-    public void BtnBack()
+
+    public void CarrackOuGalleon()
     {
-        if (idTeam == 1 && id == 1)
-        {
-            id = 2;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Eloise;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Eloise";
-        }
-        else if (idTeam == 2 && id == 1)
-        {
-            id = 2;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Betta;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Betta";
-
-        }
-        else if (idTeam == 1 && id == 2)
-        {
-            id = 1;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
-        }
-        else if (idTeam == 2 && id == 2)
-        {
-            id = 1;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
-
-        }
+        id = 1;
+        EscolherPersonagem();
 
     }
 
-    public void BtnFront() 
+    public void EloiseOuBetta()
     {
+        id = 2;
+        EscolherPersonagem();
+    }
+    //public void BtnBack()
+    //{
+    //    if (idTeam == 1 && id == 1)
+    //    {
+    //        id = 2;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Eloise;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Eloise";
+    //    }
+    //    else if (idTeam == 2 && id == 1)
+    //    {
+    //        id = 2;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Betta;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Betta";
+
+    //    }
+    //    else if (idTeam == 1 && id == 2)
+    //    {
+    //        id = 1;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
+    //    }
+    //    else if (idTeam == 2 && id == 2)
+    //    {
+    //        id = 1;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
+
+    //    }
+
+    //}
+
+    //public void BtnFront() 
+    //{
       
-        if (idTeam == 1 && id == 1)
-        {
-            id = 2;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Eloise;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Eloise";
+    //    if (idTeam == 1 && id == 1)
+    //    {
+    //        id = 2;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Eloise;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Eloise";
 
-        }
-        else if (idTeam == 2 && id == 1)
-        {
-            id = 2;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Betta;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Betta";
+    //    }
+    //    else if (idTeam == 2 && id == 1)
+    //    {
+    //        id = 2;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Betta;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Betta";
 
-        }
-        else if (idTeam == 1 && id == 2)
-        {
-            id = 1;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
+    //    }
+    //    else if (idTeam == 1 && id == 2)
+    //    {
+    //        id = 1;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Carrack;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Carrack";
 
-        }
-        else if (idTeam == 2 && id == 2)
-        {
-            id = 1;
-            InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
-            InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
+    //    }
+    //    else if (idTeam == 2 && id == 2)
+    //    {
+    //        id = 1;
+    //        InterPersonagem.transform.GetChild(0).GetComponent<Image>().sprite = Galeon;
+    //        InterPersonagem.transform.GetChild(4).GetComponentInChildren<Text>().text = "Galleon";
 
-        }
+    //    }
 
-    }
+    //}
 
     public int GetIdTeam()
     {
