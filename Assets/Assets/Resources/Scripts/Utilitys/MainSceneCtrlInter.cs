@@ -11,10 +11,10 @@ public class MainSceneCtrlInter : MonoBehaviour {
 
     [Header("Equipe")]
     public GameObject InterEquipe;
-    public Button PlayerRed;
-    public Button PlayerBlue;
-    public Text JogadoresRed;
-    public Text JogadoresBlue;
+    //public Button PlayerRed;
+    //public Button PlayerBlue;
+    //public Text JogadoresRed;
+    //public Text JogadoresBlue;
 
     [Header("Personagem")]
     public GameObject InterPersonagem;
@@ -27,6 +27,8 @@ public class MainSceneCtrlInter : MonoBehaviour {
     public Text JogadoresSala;
 
     [Header("Imagens")]
+    public Sprite EscudoVermelho;
+    public Sprite EscudoAzul;
     public Sprite Carrack;
     public Sprite Eloise;
     public Sprite Galeon;
@@ -38,6 +40,8 @@ public class MainSceneCtrlInter : MonoBehaviour {
     public GameObject btnP3;
     public GameObject btnP4;
 
+    [Header("Barra de Progresso - Ouro")]
+    public GameObject barraProgres;
 
     NetworkManager nm;
 
@@ -50,6 +54,7 @@ public class MainSceneCtrlInter : MonoBehaviour {
         nm.Connect();
         InterEquipe.SetActive(true);
 
+        
 
 	}
 	
@@ -81,6 +86,7 @@ public class MainSceneCtrlInter : MonoBehaviour {
         InterEquipe.SetActive(false);
         InterPersonagem.SetActive(false);
         InterAguardar.SetActive(true);
+        Cursor.visible = false;
     }
 
     public void EquipeRed()

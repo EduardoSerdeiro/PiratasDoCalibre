@@ -20,7 +20,7 @@ public class Mar : MonoBehaviour
         this.gameObject.AddComponent<MeshRenderer>();
         this.gameObject.name = "Ocean";
 
-        this.gameObject.AddComponent<MeshCollider>();
+       // this.gameObject.AddComponent<MeshCollider>();
 
         this.material = new Material((Shader)Resources.Load("Shaders/Mar"));
         this.material.SetColor("_Color", Color.white);

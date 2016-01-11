@@ -108,15 +108,20 @@ public class NetworkManager : MonoBehaviour {
        // this.id = id;
         GameObject MySpawn = SpawnsPlayers[Random.Range(0, SpawnsPlayers.Length)];
 
+        if (MySpawn == null)
+        {
+            Debug.LogError("Não existe pontos para Spawn");
+        }
+
         if (mainSceneInter.GetIdTeam() == 1 && mainSceneInter.GetId() == 1)
         {
-            strCaminho = "Prefabs/Characters/PlayerCarrack";
+            strCaminho = "Prefabs/Characters/Novos/PlayerCarrack";
         }
         else if (mainSceneInter.GetIdTeam() == 2 && mainSceneInter.GetId() == 1)
         {
             strCaminho = "Prefabs/Characters/PlayerGalleon";
         }
-        if (mainSceneInter.GetIdTeam() == 1 && mainSceneInter.GetId() == 2)
+        else if (mainSceneInter.GetIdTeam() == 1 && mainSceneInter.GetId() == 2)
         {
             strCaminho = "Prefabs/Characters/PlayerEloise";
         }
@@ -124,11 +129,15 @@ public class NetworkManager : MonoBehaviour {
         {
             strCaminho = "Prefabs/Characters/PlayerBetta";
         }
+        else
+        {
+            Debug.LogError("Erro no caminho do prefab do personagem");
+        }
 
 
         GameObject MyPlayer = (GameObject)PhotonNetwork.Instantiate(strCaminho, MySpawn.transform.position, MySpawn.transform.rotation, 0);
         ((MonoBehaviour)MyPlayer.GetComponent("FirstPersonController")).enabled = true;
-        MyPlayer.GetComponent<CharacterController>().enabled = true;
+            //MyPlayer.GetComponent<CharacterController>().enabled = true;
         ((MonoBehaviour)MyPlayer.GetComponent("Agachar")).enabled = true;
 
         GameObject mainCamera = GameObject.Find("Main Camera");

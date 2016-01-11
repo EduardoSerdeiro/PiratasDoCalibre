@@ -8,16 +8,16 @@ public class NetworkCharacter : Photon.MonoBehaviour {
    // private System.Threading.Thread receber = null;
 
    // PhotonStream stream;
-    CharacterController cc;
+    //CharacterController cc;
 
     private Vector3 corretPlayerPos ;
     private Quaternion corretPlayerRot ;
 
-    public Vector3 direction = Vector3.zero;
+    //public Vector3 direction = Vector3.zero;
 
     void Start()
     {
-        cc = new CharacterController();
+        //cc = new CharacterController();
        // enviar = new Thread(EnviarDadosPlayer);
        // receber = new Thread(ReceberDadosPlayer);
         
@@ -49,7 +49,7 @@ public class NetworkCharacter : Photon.MonoBehaviour {
         {
             stream.SendNext(this.transform);
             stream.SendNext(this.transform.rotation);
-
+            stream.SendNext(GetComponent<PegarOuro>().GetPegouOuro());
               //enviar.Start();
         }
         else

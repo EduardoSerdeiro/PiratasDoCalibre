@@ -1,0 +1,1675 @@
+fileFormatVersion: 2
+guid: 90ffbe06fac348244ad9a0232c05508b
+timeCreated: 1451792004
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ankle.l
+    100002: ankle.r
+    100004: base
+    100006: Carrack
+    100008: chest
+    100010: collarbone.l
+    100012: collarbone.r
+    100014: fingers1.l
+    100016: fingers1.r
+    100018: fingers2.l
+    100020: fingers2.l_end
+    100022: fingers2.r
+    100024: fingers2.r_end
+    100026: foot.l
+    100028: foot.r
+    100030: hand.l
+    100032: hand.r
+    100034: head
+    100036: head_end
+    100038: hip.l
+    100040: hip.r
+    100042: IKarm.l
+    100044: IKarm.l_end
+    100046: IKarm.r
+    100048: IKarm.r_end
+    100050: IKelbow.l
+    100052: IKelbow.l_end
+    100054: IKelbow.r
+    100056: IKelbow.r_end
+    100058: IKknee.l
+    100060: IKknee.l_end
+    100062: IKknee.r
+    100064: IKknee.r_end
+    100066: IKleg.l
+    100068: IKleg.l_end
+    100070: IKleg.r
+    100072: IKleg.r_end
+    100074: index1.l
+    100076: index1.r
+    100078: index2.l
+    100080: index2.l_end
+    100082: index2.r
+    100084: index2.r_end
+    100086: lowerarm.l
+    100088: lowerarm.r
+    100090: lowerleg.l
+    100092: lowerleg.r
+    100094: Modelo
+    100096: //RootNode
+    100098: neck
+    100100: root
+    100102: spine
+    100104: stomach
+    100106: thumb1.l
+    100108: thumb1.r
+    100110: thumb2.l
+    100112: thumb2.l_end
+    100114: thumb2.r
+    100116: thumb2.r_end
+    100118: toe.l
+    100120: toe.l_end
+    100122: toe.r
+    100124: toe.r_end
+    100126: upperarm.l
+    100128: upperarm.r
+    100130: upperleg.l
+    100132: upperleg.r
+    100134: waist
+    400000: ankle.l
+    400002: ankle.r
+    400004: base
+    400006: Carrack
+    400008: chest
+    400010: collarbone.l
+    400012: collarbone.r
+    400014: fingers1.l
+    400016: fingers1.r
+    400018: fingers2.l
+    400020: fingers2.l_end
+    400022: fingers2.r
+    400024: fingers2.r_end
+    400026: foot.l
+    400028: foot.r
+    400030: hand.l
+    400032: hand.r
+    400034: head
+    400036: head_end
+    400038: hip.l
+    400040: hip.r
+    400042: IKarm.l
+    400044: IKarm.l_end
+    400046: IKarm.r
+    400048: IKarm.r_end
+    400050: IKelbow.l
+    400052: IKelbow.l_end
+    400054: IKelbow.r
+    400056: IKelbow.r_end
+    400058: IKknee.l
+    400060: IKknee.l_end
+    400062: IKknee.r
+    400064: IKknee.r_end
+    400066: IKleg.l
+    400068: IKleg.l_end
+    400070: IKleg.r
+    400072: IKleg.r_end
+    400074: index1.l
+    400076: index1.r
+    400078: index2.l
+    400080: index2.l_end
+    400082: index2.r
+    400084: index2.r_end
+    400086: lowerarm.l
+    400088: lowerarm.r
+    400090: lowerleg.l
+    400092: lowerleg.r
+    400094: Modelo
+    400096: //RootNode
+    400098: neck
+    400100: root
+    400102: spine
+    400104: stomach
+    400106: thumb1.l
+    400108: thumb1.r
+    400110: thumb2.l
+    400112: thumb2.l_end
+    400114: thumb2.r
+    400116: thumb2.r_end
+    400118: toe.l
+    400120: toe.l_end
+    400122: toe.r
+    400124: toe.r_end
+    400126: upperarm.l
+    400128: upperarm.r
+    400130: upperleg.l
+    400132: upperleg.r
+    400134: waist
+    4300000: Modelo
+    7400000: Carrack|Crouch
+    7400002: Carrack|CrouchShoot
+    7400004: Carrack|Death
+    7400006: Carrack|Idle
+    7400008: Carrack|Jump
+    7400010: Carrack|Reload
+    7400012: Carrack|Run
+    7400014: Carrack|Shoot
+    7400016: Modelo|Run
+    9500000: //RootNode
+    13700000: Modelo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Carrack|Crouch
+      takeName: Carrack|Crouch
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|CrouchShoot
+      takeName: Carrack|CrouchShoot
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|Death
+      takeName: Carrack|Death
+      firstFrame: 0
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|Idle
+      takeName: Carrack|Idle
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|Jump
+      takeName: Carrack|Jump
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|Reload
+      takeName: Carrack|Reload
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|Run
+      takeName: Carrack|Run
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Carrack|Shoot
+      takeName: Carrack|Shoot
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Modelo|Run
+      takeName: Modelo|Run
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Carrack
+        weight: 1
+      - path: Carrack/IKarm.l
+        weight: 1
+      - path: Carrack/IKarm.l/IKarm.l_end
+        weight: 1
+      - path: Carrack/IKarm.r
+        weight: 1
+      - path: Carrack/IKarm.r/IKarm.r_end
+        weight: 1
+      - path: Carrack/IKelbow.l
+        weight: 1
+      - path: Carrack/IKelbow.l/IKelbow.l_end
+        weight: 1
+      - path: Carrack/IKelbow.r
+        weight: 1
+      - path: Carrack/IKelbow.r/IKelbow.r_end
+        weight: 1
+      - path: Carrack/IKknee.l
+        weight: 1
+      - path: Carrack/IKknee.l/IKknee.l_end
+        weight: 1
+      - path: Carrack/IKknee.r
+        weight: 1
+      - path: Carrack/IKknee.r/IKknee.r_end
+        weight: 1
+      - path: Carrack/IKleg.l
+        weight: 1
+      - path: Carrack/IKleg.l/IKleg.l_end
+        weight: 1
+      - path: Carrack/IKleg.r
+        weight: 1
+      - path: Carrack/IKleg.r/IKleg.r_end
+        weight: 1
+      - path: Carrack/root
+        weight: 1
+      - path: Carrack/root/base
+        weight: 1
+      - path: Carrack/root/base/stomach
+        weight: 1
+      - path: Carrack/root/base/stomach/spine
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/fingers1.l/fingers2.l/fingers2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/index1.l/index2.l/index2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.l/upperarm.l/lowerarm.l/hand.l/thumb1.l/thumb2.l/thumb2.l_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/fingers1.r/fingers2.r/fingers2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/index1.r/index2.r/index2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/collarbone.r/upperarm.r/lowerarm.r/hand.r/thumb1.r/thumb2.r/thumb2.r_end
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head
+        weight: 1
+      - path: Carrack/root/base/stomach/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Carrack/root/base/waist
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l
+        weight: 1
+      - path: Carrack/root/base/waist/hip.l/upperleg.l/lowerleg.l/ankle.l/foot.l/toe.l/toe.l_end
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r
+        weight: 1
+      - path: Carrack/root/base/waist/hip.r/upperleg.r/lowerleg.r/ankle.r/foot.r/toe.r/toe.r_end
+        weight: 1
+      - path: Modelo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

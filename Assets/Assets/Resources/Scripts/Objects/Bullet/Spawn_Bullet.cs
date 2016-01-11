@@ -3,6 +3,10 @@ using System.Collections;
 
 public class Spawn_Bullet : MonoBehaviour {
 
+    [Header("PrefabPersonagem")]
+    public GameObject player;
+
+
     [Header("Audio Shoot")]
     private AudioSource audioShoot;
     public AudioClip shoot;
@@ -36,6 +40,7 @@ public class Spawn_Bullet : MonoBehaviour {
             timeCurrShoot = 0;
             muniArma--;
             audioShoot.PlayOneShot(shoot);
+            this.player.GetComponent<Animator>().SetTrigger("Shoot");
         }
 
         if (Input.GetKeyDown(KeyCode.R) && QuantiMuni>0 && muniArma< 1)
